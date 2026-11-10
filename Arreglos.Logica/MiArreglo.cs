@@ -160,7 +160,7 @@ namespace Arreglos.Logica
                 {
                     arregloPares.Agregar(_arreglo[i]);
                 }
-            }
+            } 
             return arregloPares;
         }
 
