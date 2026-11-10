@@ -43,7 +43,7 @@ try
     Console.WriteLine(oMiArreglo);
     Console.ReadKey();
 
-    Console.WriteLine("\n Pares\n");
+    Console.WriteLine("\nPares\n");
     var verPares =oMiArreglo.ObtenerPares();
     Console.WriteLine(verPares);
     Console.ReadKey();
@@ -54,11 +54,22 @@ try
     Console.WriteLine(verPares);
     Console.ReadKey();
 
-}
-catch (Exception)
-{
 
-	throw;
+    Console.WriteLine("\nPrimos\n");
+    var verPrimos = oMiArreglo.ObtenerPrimos();
+    Console.WriteLine(verPrimos);
+    Console.ReadKey();
+
+    Console.WriteLine("Primos Ordenados\n");
+    verPrimos.Ordenar(true);
+    Console.WriteLine(verPrimos);
+    Console.ReadKey();
+
+
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
 }
 
 
